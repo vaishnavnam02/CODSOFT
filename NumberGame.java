@@ -24,6 +24,7 @@ public class NumberGame{
         System.out.println("Enter Your Guess: ");
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
+        sc.close();
             
             if(randomNum==input){
                 System.out.println(input+" Is the Right Answer!");
@@ -71,6 +72,7 @@ public class NumberGame{
         
         
         }
+        
         
 
     }

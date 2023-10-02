@@ -8,6 +8,7 @@ public class NumberGame{
         int num = (int) ((Math.random()*(max-min))+min);
         return num;
     }
+    
     public static void main(String[] args) {
         int randomNum = RandomNumber(0,100);
         int higher = 0;
@@ -24,7 +25,7 @@ public class NumberGame{
         System.out.println("Enter Your Guess: ");
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
-        sc.close();
+        
             
             if(randomNum==input){
                 System.out.println(input+" Is the Right Answer!");
@@ -46,8 +47,11 @@ public class NumberGame{
                 higher++;
                 
             }
+           
             
+        
         }while(attempt>0);
+        
         System.out.println();
         System.out.println();
         attempt = 5;
@@ -60,6 +64,8 @@ public class NumberGame{
         round++;
         
         
+        
+        
 
         }while(round<6);
         System.out.println("Your Final Score is");
@@ -67,13 +73,14 @@ public class NumberGame{
         System.out.println("Higher Guesses: "+higher);
         System.out.println("Lower Guesses: "+lower);
         System.out.println("Correct Guesses: "+correct);
+        
      
-
+        
         
         
         }
         
         
-
+        
     }
 

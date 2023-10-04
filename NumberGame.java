@@ -2,7 +2,7 @@ package CODSOFT;
 import java.util.*;
 
 
-
+//okay
 public class NumberGame{
     public static int RandomNumber(int min, int max){
         int num = (int) ((Math.random()*(max-min))+min);
